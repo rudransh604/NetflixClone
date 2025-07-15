@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 0 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo svg {
+  height: 50px;
+  display: block;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-select {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.language-select option {
+  background-color: #000;
+  color: #fff;
+}
+
+.box1 a {
+  text-decoration: none;
+  background-color: #e50914;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.box1 a:hover {
+  background-color: #c70812;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('media/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0 60px 0;
+  text-align: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 10%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.8) 90%
+  );
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px 60px 20px;
+}
+
+.first {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.subb {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.email-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.email-form input[type="email"] {
+  padding: 14px;
+  width: 300px;
+  max-width: 90vw;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+}
+
+.email-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.email-form button {
+  padding: 14px 24px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #c70812;
+}
+
+.trending-section {
+  padding: 30px;
+  background-color: black;
+}
+
+.trending {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.trending1 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+  background: transparent;
+}
+
+.trending1 .show img {
+  width: 180px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.trending1 .show img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+}
+
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: transparent;
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #e50914, transparent);
+  margin: 60px auto;
+  width: 60%;
+}
+
+.faq-section {
+  background: #111;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.faq-title {
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #222;
+}
+
+.faq-question {
+  width: 100%;
+  background: #222;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.faq-question:hover {
+  background: #333;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 20px 20px 20px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
